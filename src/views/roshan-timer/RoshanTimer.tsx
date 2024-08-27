@@ -147,7 +147,7 @@ const RoshanTimer: React.FC = () => {
           </Button>
         )}
       </Flex>
-      {currentTime > 0 && (
+      {currentTime > 0 && isRoshanAlive && (
         <Flex align="center" justify="center">
           <Button type="primary" onClick={() => onRoshanSlain(currentTime)}>
             Roshan was slain
