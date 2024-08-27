@@ -1,4 +1,16 @@
 import { App as AntApp, ConfigProvider } from 'antd';
+import styled from 'styled-components';
+
+import { AppRoutes } from '@config';
+
+const MainWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 920px;
+`;
 
 const App: React.FC = () => {
   return (
@@ -12,9 +24,9 @@ const App: React.FC = () => {
       }}
     >
       <AntApp>
-        <h1 style={{ fontFamily: 'OPTIwtcGoudy-Medium' }}>
-          {'Dota2'.toLocaleUpperCase()}
-        </h1>
+        <MainWrapper>
+          <AppRoutes />
+        </MainWrapper>
       </AntApp>
     </ConfigProvider>
   );
