@@ -1,6 +1,7 @@
 import { App as AntApp, ConfigProvider } from 'antd';
 import styled from 'styled-components';
 
+import { Footer } from '@components';
 import { AppRoutes } from '@config';
 
 const MainWrapper = styled.div`
@@ -26,6 +27,7 @@ const App: React.FC = () => {
       <AntApp>
         <MainWrapper>
           <AppRoutes />
+          <Footer />
         </MainWrapper>
       </AntApp>
     </ConfigProvider>

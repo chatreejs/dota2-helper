@@ -34,6 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: unset;
   user-select: none;
+  background-color: #000;
   --card-shadow-filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.1));
 }
 
